@@ -9,10 +9,12 @@
     }
 %>
 <%
-    if (!"student".equals(session.getAttribute("role"))) {
-        response.sendRedirect("../auth/login.jsp");
-        return;
-    }
+
+	String userRole = (String) session.getAttribute("role");
+	if (userRole == null || (!"student".equals(userRole) && !"librarian".equals(userRole) && !"admin".equals(userRole))) {
+ 					response.sendRedirect("../auth/login.jsp");
+ 					return;
+       }
 
     String search = request.getParameter("search");
     String category = request.getParameter("category");

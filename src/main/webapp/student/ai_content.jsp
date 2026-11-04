@@ -94,7 +94,7 @@
     try { apiKey = application.getInitParameter("groq.api.key"); } catch (Exception e) { }
     
     if (apiKey == null || apiKey.isEmpty() || apiKey.contains("YOUR_REAL")) {
-        apiKey = "your key "; 
+        apiKey = "bring your api  key "; 
     }
 
     String type   = request.getParameter("type");

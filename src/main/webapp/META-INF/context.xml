@@ -3,7 +3,7 @@
     Application-scoped environment entry for NVIDIA API key.
     Replace the value with a placeholder before committing to source control if this repo is public.
     <Environment name="NV_API_KEY"
-                 value="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"
+                 value=""
                  type="java.lang.String"
                  override="false"/>
 </Context> 
